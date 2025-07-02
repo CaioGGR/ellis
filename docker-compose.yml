@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: api # nomeando o container do dockerfile
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/app #monta o diretorio atual dentro do container para atualizacoes em tempo real
